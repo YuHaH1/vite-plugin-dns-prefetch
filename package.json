@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-dns-prefetch",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "a plugin of dns-prefetch",
   "module": "dist/main.mjs",
   "types": "dist/main.d.ts",
