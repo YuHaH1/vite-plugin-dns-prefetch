@@ -2,7 +2,7 @@ import type { IOptions } from '../types'
 
 const DEFAULTOPTIONS: IOptions = {
   limit: 6,
-  parseFile: ['.vue'],
+  parseFile: '.ts',
   addDnsUrl: [],
   excludeDnsPrefetchUrl: [],
 }

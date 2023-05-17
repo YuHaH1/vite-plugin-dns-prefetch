@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-dns-prefetch",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "a plugin of dns-prefetch",
   "module": "dist/main.mjs",
   "types": "dist/main.d.ts",
@@ -12,8 +12,9 @@
     "preview:eg": "vite preview vite-project",
     "build": "tsup",
     "release": "bumpp",
-    "changelog":"changelogen --output CHANGELOG.md"
+    "changelog": "changelogen --output CHANGELOG.md"
   },
+  "private": "false",
   "files": [
     "dist"
   ],
@@ -29,6 +30,7 @@
     "@mistjs/tsconfig-vue": "^1.1.2",
     "@types/node": "^20.1.7",
     "@vitejs/plugin-vue": "^4.2.3",
+    "bumpp": "^9.1.0",
     "changelogen": "^0.5.3",
     "eslint": "^8.40.0",
     "node-html-parser": "^6.1.5",

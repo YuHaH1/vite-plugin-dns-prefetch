@@ -1,6 +1,6 @@
 interface IOptions {
   limit: number
-  parseFile: string[]
+  parseFile: '.ts' | '.js'
   addDnsUrl: string[]
   excludeDnsPrefetchUrl: string[]
 }

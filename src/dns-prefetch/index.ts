@@ -6,19 +6,18 @@ import type { IUserOptions } from '../types'
 import { getExtension } from '../utils'
 import { init } from './init'
 const urlSet = new Set()
-
 const VitePluginDnsPrefetch = (UserOptions: IUserOptions): PluginOption => {
   const options = init(UserOptions)
   const userAddDnsUrl = options.addDnsUrl
   if (userAddDnsUrl?.length) { // 将用户指定URL加入DNS解析
     userAddDnsUrl.forEach((url) => {
-      if (userAddDnsUrl?.length < options.limit && !options.excludeDnsPrefetchUrl.includes(url))
+      if (urlSet?.size < options.limit && !options.excludeDnsPrefetchUrl.includes(url))
         urlSet.add(url)
     })
   }
   return {
     name: PLUGINNAME,
-    apply: 'build', // 生产环境
+    apply: 'build',
     transform(code: string, id: string) {
       const extension = getExtension(id)
       if (urlSet.size > options.limit) {
