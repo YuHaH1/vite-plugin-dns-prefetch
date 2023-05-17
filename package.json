@@ -1,0 +1,40 @@
+{
+  "name": "vite-plugin-dns-prefetch",
+  "version": "1.0.0",
+  "description": "a plugin of dns-prefetch",
+  "module": "dist/main.mjs",
+  "types": "dist/main.d.ts",
+  "main":"dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:eg":"vite dev vite-project",
+    "build:eg":"vite build vite-project",
+    "preview:eg":"vite preview vite-project",
+    "build":"tsup"
+  },
+  "files": ["dist"],
+  "keywords": [
+    "vite-plugin-dns-prefetch",
+    "dns-prefetch",
+    "prefetch"
+  ],
+  "author": "fancy_fish",
+  "license": "ISC",
+  "devDependencies": {
+    "@mistjs/eslint-config-vue": "^0.0.5",
+    "@mistjs/tsconfig-vue": "^1.1.2",
+    "@types/node": "^20.1.7",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "^8.40.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.7",
+    "vite-plugin-inspect": "^0.7.26",
+    "vitest": "^0.31.0",
+    "vue": "^3.3.2"
+  },
+  "dependencies": {
+    "node-html-parser": "^6.1.5",
+    "url-regex": "^5.0.0"
+  }
+}
