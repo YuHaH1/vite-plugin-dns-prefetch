@@ -11,7 +11,8 @@
     "build:eg": "vite build vite-project",
     "preview:eg": "vite preview vite-project",
     "build": "tsup",
-    "release": "bumpp"
+    "release": "bumpp",
+    "changelog":"changelogen --output CHANGELOG.md"
   },
   "files": [
     "dist"
@@ -28,6 +29,7 @@
     "@mistjs/tsconfig-vue": "^1.1.2",
     "@types/node": "^20.1.7",
     "@vitejs/plugin-vue": "^4.2.3",
+    "changelogen": "^0.5.3",
     "eslint": "^8.40.0",
     "node-html-parser": "^6.1.5",
     "tsup": "^6.7.0",
